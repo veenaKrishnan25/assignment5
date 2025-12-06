@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <style>
+        legend {
+            all: revert;
+
+
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-dark bg-dark navbar-expand-lg sticky-top">
+        <div class="container m-3">
+            <a class="navbar-brand fw-bold" href="#home">Healthy life hub</a>
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#dropdownlinks">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="dropdownlinks">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="">Article</a></li>
+                    <li class="nav-item"><a class="nav-link" href="">Programs</a></li>
+                    <li class="nav-item"><a class="nav-link" href="">Contact</a></li>
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+
+    <!-- carousel -->
+    <div class="container mt-4">
+        <div class="carousel slide" id="carouselmain">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="d-block w-100" src="/images/img_crsl.jpg" alt="">
+                    <div class="carousel-caption d-block">
+                        <h2 class="fs-3 fs-lg-5 fw-bolder text-warning ">Yoga for Inner Balance</h2>
+                        <p class="text-light">Start your mornings with calmness and boost your mental clarity.</p>
+                    </div>
+
+
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="/images/img2_crsl.webp" alt="">
+                    <div class="carousel-caption d-block">
+                        <h2 class="fs-3 fs-lg-5 fw-bolder text-success" id="crsl_h">Clean & Healthy Eating</h2>
+                        <p class="text-light">Discover delicious recipes that nourish your body and mind.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="/images/img3_crsl.jpg" alt="">
+                    <div class="carousel-caption d-block">
+                        <h2 class="fs-3 fs-lg-5 fw-bolder text-info">Daily Workout Routine</h2>
+                        <p class="text-light">Stay fit and energized with our easy-to-follow exercise plans.</p>
+                    </div>
+                </div>
+            </div>
+
+            <button class="carousel-control-prev" data-bs-target="#carouselmain" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" data-bs-target="#carouselmain" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+        </div>
+    </div>
+
+    <!-- cards -->
+    <div class="container mt-5" id="topics">
+        <h2 class="text-center mb-4">Featured Topics</h2>
+        <div class="row g-4">
+            <div class="col-sm-6 col-md-6  col-lg-3">
+                <div class="card p-3 h-100 d-flex flex-column">
+                    <div class="ratio ratio-4x3">
+                        <img class="card-img-top object-fit-cover" src="/images/cardimg/img1.jpeg" alt="">
+                    </div>
+                    <div class="card-body">
+                        <h4>Fitness & Workouts</h4>
+                        <p>Short home-friendly workouts and weekly plans for all levels.</p>
+                        <button class="btn btn-primary mt-md-4">Learn More</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 col-lg-3">
+                <div class="card p-3 h-100 d-flex flex-column">
+                    <div class="ratio ratio-4x3">
+                        <img class="card-img-top object-fit-cover" src="/images/cardimg/img2.jpeg" alt="">
+                    </div>
+                    <div class="card-body">
+                        <h4>Nutrition & Recipes</h4>
+                        <p>Balanced meals, quick recipes and shopping tips for busy days.</p>
+                        <button class="btn btn-primary">Learn More</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 col-lg-3">
+                <div class="card p-3 h-100 d-flex flex-column">
+                    <div class="ratio ratio-4x3">
+                        <img class="card-img-top object-fit-cover" src="/images/cardimg/img3.jpeg" alt="">
+                    </div>
+                    <div class="card-body">
+                        <h4>Sleep & Recovery</h4>
+                        <p>Tips to improve sleep quality and rest effectively.</p>
+                        <button class="btn btn-primary mt-5 mt-md-4">Learn More</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 col-lg-3">
+                <div class="card p-3 h-100 d-flex flex-column">
+                    <div class="ratio ratio-4x3">
+                        <img class="card-img-top object-fit-cover" src="/images/cardimg/img4.webp" alt="">
+                    </div>
+                    <div class="card-body">
+                        <h4>Hydration & Drinks</h4>
+                        <p>Simple hydration habits and healthy drink ideas.</p>
+                        <button class="btn btn-primary mt-3">Learn More</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- +aboutus -->
+
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col d-flex flex-column justify-content-center">
+                <h1>Welcome to Healthy Life Hub</h1>
+                <h3>Your Space for Simple, Sustainable Wellness</h3>
+                <p>
+                    Healthy Life Hub is your daily guide to feeling better, living stronger,
+                    and building habits that actually stick. From easy home workouts to
+                    nutritious meal ideas and stress-free wellness tips, we bring you the
+                    right mix of health essentials—simple, practical, and perfect for busy lives.
+                </p>
+                <div class="d-flex gap-3">
+                <button class="btn btn-primary ">Explore Programs</button>
+                <button class="btn btn-outline-primary">Learn More</button>
+                </div>
+            </div>
+            <div class="col d-flex align-items-center">
+                <img width="100%" src="/images/abtus_img.jpg" alt="">
+            </div>
+        </div>
+
+    </div>
+
+    <!-- accordion -->
+
+    <div class="container-fluid mt-5">
+        <h2>FAQs</h2>
+        <div class="accordion mt-3" id="aboutaccordion">
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#collapseOne">
+                        What is the main focus of Healthy Life Hub?
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#aboutaccordion">
+                    <div class="accordion-body">
+                        Healthy Life Hub focuses on providing resources and tips for fitness, nutrition, mental
+                        well-being, and overall healthy living.
+                    </div>
+
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#collapse2">
+                        What is the simplest way to start living healthier?
+                    </button>
+                </h2>
+                <div id="collapse2" class="accordion-collapse collapse " data-bs-parent="#aboutaccordion">
+                    <div class="accordion-body">
+                        Start with tiny habits.
+                        Drink more water, walk 10–15 minutes a day, sleep on time, and eat one balanced meal daily.
+                        Small changes stack up faster than big plans.
+                    </div>
+
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#collapse3">
+                        How do I stay consistent with a healthy routine?
+                    </button>
+                </h2>
+                <div id="collapse3" class="accordion-collapse collapse " data-bs-parent="#aboutaccordion">
+                    <div class="accordion-body">
+                        Don’t depend on motivation — depend on routine.
+                        Pick 2–3 things you can do every day (like stretching, hydrating, eating fruit) and keep them
+                        non-negotiable.
+                        Consistency beats intensity.
+                    </div>
+
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#collapse4">
+                        What should I eat for better energy throughout the day?
+                    </button>
+                </h2>
+                <div id="collapse4" class="accordion-collapse collapse" data-bs-parent="#aboutaccordion">
+                    <div class="accordion-body">
+                        focus on whole foods like fruits, vegetables, lean proteins, and whole grains.
+                        Avoid excessive sugar and processed foods that can lead to energy crashes.
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+
+    </div>
+
+    <!-- contact -->
+    <div class="container mt-5 mb-5" id="contact">
+        <h2 class="text-center">Contact Us</h2>
+
+        <div class="col-12 col-md-10 col-lg-10 mx-auto">
+
+            <form action="">
+                <div class="row">
+                    <div class="col-md-6 mt-4">
+                        <label for="" class="form-label">Enter your first name:</label>
+                        <input type="text" id="label1" class="form-control" placeholder="Enter your first name">
+
+                    </div>
+                    <div class="col-md-6 mt-4">
+                        <label for="" id="label2" class="form-label">Enter your Email address:</label>
+                        <input type="text" class="form-control" placeholder=" Enter your email address">
+
+                    </div>
+                    <div class="col-md-6 mt-3">
+                        <label for="" class="form-label">Contact:</label>
+                        <input type="text" id="label1" class="form-control" placeholder="Enter your contact number">
+
+                    </div>
+                    <div class="col-md-6 mt-3">
+                        <label for="" class="form-label">Enter your concern:</label>
+                        <textarea rows="4" class="form-control" name="" id=""></textarea>
+
+                    </div>
+                    <button class="btn btn-primary mt-4">Submit</button>
+                </div>
+
+            </form>
+        </div>
+
+    </div>
+
+   
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>

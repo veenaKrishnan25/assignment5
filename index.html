@@ -1,0 +1,431 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Healthy Life Hub</title>
+
+  <!-- Bootstrap CSS (v5) -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Optional: Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+
+  <style>
+    /* small visual tweaks */
+    .hero {
+      background: linear-gradient(180deg, rgba(34,193,195,0.06), rgba(253,187,45,0.03));
+      padding: 4.5rem 0;
+    }
+    .card-img-top { height: 180px; object-fit: cover; }
+    .program-card { min-height: 120px; }
+  </style>
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#home">Healthy Life Hub</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"
+              aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav ms-auto align-items-lg-center">
+          <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#topics">Topics</a></li>
+          <li class="nav-item"><a class="nav-link" href="#programs">Programs</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <header id="home" class="hero">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-7">
+          <h1 class="display-5 fw-bold">Healthy Life Hub</h1>
+          <p class="lead">Simple workouts, tasty healthy recipes, and easy wellness tips — all in one place.</p>
+          <p>
+            <a href="#programs" class="btn btn-primary me-2">Explore Programs</a>
+            <a href="#topics" class="btn btn-outline-secondary">Browse Topics</a>
+          </p>
+        </div>
+        <div class="col-lg-5 d-none d-lg-block">
+          <img src="https://images.unsplash.com/photo-1549576490-b0b4831ef60a?q=80&w=900&auto=format&fit=crop&crop=faces"
+               alt="Healthy life" class="img-fluid rounded shadow-sm">
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="py-5">
+    <div class="container">
+
+      <!-- TOPICS: CARDS GRID -->
+      <section id="topics" class="mb-5">
+        <div class="d-flex justify-content-between align-items-center mb-3">
+          <h2 class="h4 mb-0">Featured Topics</h2>
+          <small class="text-muted">Click any card to read more</small>
+        </div>
+
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+          <!-- Card 1 -->
+          <div class="col">
+            <div class="card h-100 shadow-sm">
+              <img src="https://images.unsplash.com/photo-1554284126-aa88f22d8d0a?q=80&w=1200&auto=format&fit=crop&crop=faces"
+                   class="card-img-top" alt="Fitness">
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title">Fitness & Workouts</h5>
+                <p class="card-text">Short home-friendly workouts and weekly plans for all levels.</p>
+                <div class="mt-auto">
+                  <button class="btn btn-sm btn-primary" data-bs-toggle="modal" data-bs-target="#modalFitness">Read more</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="col">
+            <div class="card h-100 shadow-sm">
+              <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?q=80&w=1200&auto=format&fit=crop&crop=faces"
+                   class="card-img-top" alt="Nutrition">
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title">Nutrition & Recipes</h5>
+                <p class="card-text">Balanced meals, quick recipes and shopping tips for busy days.</p>
+                <div class="mt-auto">
+                  <button class="btn btn-sm btn-primary" data-bs-toggle="modal" data-bs-target="#modalNutrition">Read more</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="col">
+            <div class="card h-100 shadow-sm">
+              <img src="https://images.unsplash.com/photo-1511919884226-fd3cad34687c?q=80&w=1200&auto=format&fit=crop&crop=faces"
+                   class="card-img-top" alt="Mindfulness">
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title">Mind & Wellness</h5>
+                <p class="card-text">Mindfulness exercises, sleep tips, and stress-busting habits.</p>
+                <div class="mt-auto">
+                  <button class="btn btn-sm btn-primary" data-bs-toggle="modal" data-bs-target="#modalMind">Read more</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 4 -->
+          <div class="col">
+            <div class="card h-100 shadow-sm">
+              <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?q=80&w=1200&auto=format&fit=crop&crop=faces"
+                   class="card-img-top" alt="Hydration">
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title">Hydration & Drinks</h5>
+                <p class="card-text">Simple hydration habits and healthy drink ideas.</p>
+                <div class="mt-auto">
+                  <button class="btn btn-sm btn-primary" data-bs-toggle="modal" data-bs-target="#modalHydration">Read more</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 5 -->
+          <div class="col">
+            <div class="card h-100 shadow-sm">
+              <img src="https://images.unsplash.com/photo-1523986371872-9d3ba2e2f642?q=80&w=1200&auto=format&fit=crop&crop=faces"
+                   class="card-img-top" alt="Skin">
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title">Skin & Self-care</h5>
+                <p class="card-text">Gentle skincare habits and self-care routines you can keep daily.</p>
+                <div class="mt-auto">
+                  <button class="btn btn-sm btn-primary" data-bs-toggle="modal" data-bs-target="#modalSkin">Read more</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 6 -->
+          <div class="col">
+            <div class="card h-100 shadow-sm">
+              <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=1200&auto=format&fit=crop&crop=faces"
+                   class="card-img-top" alt="Sleep">
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title">Sleep & Recovery</h5>
+                <p class="card-text">Tips to improve sleep quality and rest effectively.</p>
+                <div class="mt-auto">
+                  <button class="btn btn-sm btn-primary" data-bs-toggle="modal" data-bs-target="#modalSleep">Read more</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- PROGRAMS + ACCORDION -->
+      <section id="programs" class="mb-5">
+        <div class="row g-4">
+          <div class="col-lg-6">
+            <h2 class="h4">Programs & FAQs</h2>
+            <p class="text-muted">Pick a program and read the quick FAQ below.</p>
+
+            <div class="accordion" id="programsAccordion">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="progOneHeading">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#progOne" aria-expanded="true" aria-controls="progOne">
+                    7-Day Reset
+                  </button>
+                </h2>
+                <div id="progOne" class="accordion-collapse collapse show" aria-labelledby="progOneHeading" data-bs-parent="#programsAccordion">
+                  <div class="accordion-body">
+                    Daily gentle workouts, simple meals, and sleep targets. Great for restarting habits.
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="progTwoHeading">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#progTwo" aria-expanded="false" aria-controls="progTwo">
+                    30-Day Habit Builder
+                  </button>
+                </h2>
+                <div id="progTwo" class="accordion-collapse collapse" aria-labelledby="progTwoHeading" data-bs-parent="#programsAccordion">
+                  <div class="accordion-body">
+                    One tiny habit each day, tracked over 30 days. Focus on consistency and simplify choices.
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="progThreeHeading">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#progThree" aria-expanded="false" aria-controls="progThree">
+                    Home Strength
+                  </button>
+                </h2>
+                <div id="progThree" class="accordion-collapse collapse" aria-labelledby="progThreeHeading" data-bs-parent="#programsAccordion">
+                  <div class="accordion-body">
+                    Strength routines using bodyweight and household items — progressive and safe.
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Program Cards -->
+          <div class="col-lg-6">
+            <div class="row row-cols-1 row-cols-md-2 g-3">
+              <div class="col">
+                <div class="card program-card border-0 rounded-3 shadow-sm p-3">
+                  <h5 class="mb-1">7-day Reset</h5>
+                  <p class="small text-muted mb-2">Daily gentle workouts + clean meals.</p>
+                  <a href="#contact" class="btn btn-sm btn-outline-primary">Join</a>
+                </div>
+              </div>
+
+              <div class="col">
+                <div class="card program-card border-0 rounded-3 shadow-sm p-3">
+                  <h5 class="mb-1">30-day Habit Builder</h5>
+                  <p class="small text-muted mb-2">Build lasting habits with small daily actions.</p>
+                  <a href="#contact" class="btn btn-sm btn-outline-primary">Join</a>
+                </div>
+              </div>
+
+              <div class="col">
+                <div class="card program-card border-0 rounded-3 shadow-sm p-3">
+                  <h5 class="mb-1">Quick Calm</h5>
+                  <p class="small text-muted mb-2">5-minute guided mindfulness sessions.</p>
+                  <a href="#contact" class="btn btn-sm btn-outline-primary">Join</a>
+                </div>
+              </div>
+
+              <div class="col">
+                <div class="card program-card border-0 rounded-3 shadow-sm p-3">
+                  <h5 class="mb-1">Home Strength</h5>
+                  <p class="small text-muted mb-2">Strength moves using household items.</p>
+                  <a href="#contact" class="btn btn-sm btn-outline-primary">Join</a>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CONTACT FORM -->
+      <section id="contact" class="mb-5">
+        <h2 class="h4">Contact Us</h2>
+        <p class="text-muted">Have a question or want to join a program? Send a message.</p>
+
+        <form class="row g-3" action="#" method="post" novalidate>
+          <div class="col-md-6">
+            <label for="name" class="form-label">Name</label>
+            <input id="name" name="name" type="text" class="form-control" required>
+          </div>
+
+          <div class="col-md-6">
+            <label for="email" class="form-label">Email</label>
+            <input id="email" name="email" type="email" class="form-control" required>
+          </div>
+
+          <div class="col-12">
+            <label for="subject" class="form-label">Subject</label>
+            <input id="subject" name="subject" type="text" class="form-control" required>
+          </div>
+
+          <div class="col-12">
+            <label for="message" class="form-label">Message</label>
+            <textarea id="message" name="message" rows="4" class="form-control" required></textarea>
+          </div>
+
+          <div class="col-12">
+            <button type="submit" class="btn btn-success">Send Message</button>
+          </div>
+        </form>
+      </section>
+
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="bg-light py-4">
+    <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center">
+      <div class="small text-muted">© Healthy Life Hub</div>
+      <div>
+        <a class="text-muted me-3" href="#"><i class="bi bi-instagram"></i></a>
+        <a class="text-muted me-3" href="#"><i class="bi bi-facebook"></i></a>
+        <a class="text-muted" href="#"><i class="bi bi-twitter"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ======= MODALS (one per card - no custom JS required) ======= -->
+
+  <!-- Modal - Fitness -->
+  <div class="modal fade" id="modalFitness" tabindex="-1" aria-labelledby="modalFitnessLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalFitnessLabel">Fitness & Workouts</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p>Beginner-friendly home workouts, weekly templates, and short video suggestions. Start with 10–20 min/day and slowly increase intensity.</p>
+          <ul>
+            <li>Warm-up (5 min)</li>
+            <li>Bodyweight circuit: squats, push-ups, lunges (3 rounds)</li>
+            <li>Cool down & stretch</li>
+          </ul>
+        </div>
+        <div class="modal-footer">
+          <a href="#programs" class="btn btn-outline-primary" data-bs-dismiss="modal">View Programs</a>
+          <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal - Nutrition -->
+  <div class="modal fade" id="modalNutrition" tabindex="-1" aria-labelledby="modalNutritionLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalNutritionLabel">Nutrition & Recipes</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p>Balanced meal ideas, grocery lists, and quick recipes that fit busy schedules. Focus on protein + veggies + healthy fats each meal.</p>
+          <p><strong>Sample:</strong> Stir-fry veggies + paneer or chicken, brown rice, and a side salad.</p>
+        </div>
+        <div class="modal-footer">
+          <a href="#programs" class="btn btn-outline-primary" data-bs-dismiss="modal">View Programs</a>
+          <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal - Mind -->
+  <div class="modal fade" id="modalMind" tabindex="-1" aria-labelledby="modalMindLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalMindLabel">Mind & Wellness</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p>Guided breathing, short meditations, and sleep hygiene tips. Try a 5-minute breathing practice after work to reset.</p>
+        </div>
+        <div class="modal-footer">
+          <a href="#programs" class="btn btn-outline-primary" data-bs-dismiss="modal">View Programs</a>
+          <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal - Hydration -->
+  <div class="modal fade" id="modalHydration" tabindex="-1" aria-labelledby="modalHydrationLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalHydrationLabel">Hydration & Drinks</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p>Simple hydration goals, infused water ideas, and how to track daily intake. Aim for consistent sips rather than gulping when thirsty.</p>
+        </div>
+        <div class="modal-footer">
+          <a href="#programs" class="btn btn-outline-primary" data-bs-dismiss="modal">View Programs</a>
+          <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal - Skin -->
+  <div class="modal fade" id="modalSkin" tabindex="-1" aria-labelledby="modalSkinLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalSkinLabel">Skin & Self-care</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p>Daily skincare routines that are pregnancy-safe and gentle, plus self-care ideas that fit into small pockets of time.</p>
+        </div>
+        <div class="modal-footer">
+          <a href="#programs" class="btn btn-outline-primary" data-bs-dismiss="modal">View Programs</a>
+          <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal - Sleep -->
+  <div class="modal fade" id="modalSleep" tabindex="-1" aria-labelledby="modalSleepLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalSleepLabel">Sleep & Recovery</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p>Tips for consistent bedtimes, wind-down routines, and how to build sleep-friendly habits even with a busy schedule.</p>
+        </div>
+        <div class="modal-footer">
+          <a href="#programs" class="btn btn-outline-primary" data-bs-dismiss="modal">View Programs</a>
+          <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS bundle (includes Popper) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
